@@ -1,0 +1,10 @@
+version: '1.0'
+services:
+  fast-api:
+    image: fast-api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+   
