@@ -7,4 +7,7 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8080:80"
-   
+    volumes:
+      - fastapi-data:/app/data
+volumes:
+  fastapi-data: 
